@@ -271,18 +271,19 @@ header nav ul li a {
 
 .delivering .text-container {
   align-self:center;
-  height: 80%;
+  height: 500px;
   /* background: red; */
 }
 
 .delivering .text-container h1 {
   color: #fff;
-  font-size: 48px;
+  font-size: 42px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   margin:0;
   margin-left: 30px;
+  padding:0;
   /* background:blue; */
 }
 
@@ -300,7 +301,8 @@ header nav ul li a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
+  width:100%;
+  height:100%;
 }
 
 .icons-info {
@@ -327,7 +329,9 @@ header nav ul li a {
 }
 
 .more-info h2 {
-  margin-left:120px;
+  /* margin-left:120px; */
+  font-size:24px;
+  font-weight:500;
 }
 
 .more-info h2,
@@ -348,7 +352,7 @@ header nav ul li a {
   grid-column: 2 / -1;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   width: 80%;
   align-self:start
@@ -946,18 +950,59 @@ footer form button {
 
   .delivering {
     grid-template-columns: 1fr;
-    height:1350px;
+    height:900px;
+    /* background:Red; */
+  }
+
+  .delivering .image-container {
+    display:none;
+  }
+  
+
+  .delivering .more-info h2 {
+    margin-bottom:0px;
+  }
+
+  .delivering .more-info i {
+    margin-bottom: 0px;;
   }
 
   .delivering .icons-info {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,150px);
     justify-items: center;
+  }
+
+  .delivering .text-container {
+    /* background:purple; */
+    align-self:start;
+    margin-top:50px;
+  }
+
+  .delivering .text-container h1 {
+    font-size:32px;
+    /* background:blue; */
+    max-width: 100%;
+    width:300px;
+    padding:0;
+  }
+
+  .delivering .line {
+    width:280px;
+  }
+
+  .delivering .text-container .icons-info {
+    /* background:Blue; */
+    width:100%;
+    margin:0 auto;
+    height:100% !important;
   }
 
   .delivering .more-info {
     /* background:red; */
     width:90%;
     margin:0; 
+    /* margin:30px 0; */
   }
 
   .delivering .more-info p {
@@ -1013,7 +1058,7 @@ footer form button {
   }
 
   .details {
-    height:900px;
+    height:700px;
     grid-template-columns: 1fr;
   }
 
@@ -1024,6 +1069,16 @@ footer form button {
     align-items:center;
     justify-content:center;
     flex-direction:column;
+  }
+
+  .details .left-side h2 {
+    font-size:32px;
+  }
+
+  .details .left-side p {
+    font-size:18px;
+    width:90% !important;
+    /* background:red; */
   }
 
   .details .left-side h6,
@@ -1058,6 +1113,22 @@ footer form button {
   .section-b {
     height:300px;
     grid-template-columns: 1fr;
+  }
+
+  .clients-card .img img{
+    width:120px;
+    height:120px;
+  }
+
+  .clients-card .img {
+    height:132px;
+    width:132px;
+  }
+
+  .clients-card p {
+    font-size:16px;
+    /* background:red; */
+    width:90%;
   }
 
   footer {
