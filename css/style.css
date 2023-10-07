@@ -1017,6 +1017,13 @@ footer form button {
     width:100%;
   }
 
+  .our-work nav ul {
+   
+    padding:0;
+    justify-content:center;
+    gap:15px;
+  }
+
   .our-work .wrapper {
     /* background:Red; */
     width:80%;
@@ -1101,11 +1108,12 @@ footer form button {
   }
 
   .section-a .a-header {
-    font-size:24px;
+    font-size:32px !important;
+    /* background:Red; */
   }
 
   .section-a .a-text {
-    font-size:20px !important;
+    font-size:16px !important;
     /* background:Red; */
     width:90% !important;
   }
@@ -1113,6 +1121,20 @@ footer form button {
   .section-b {
     height:300px;
     grid-template-columns: 1fr;
+  }
+
+  .section-b h1 {
+    /* background:Red; */
+    font-size:28px;
+  }
+
+  .section-b h3 {
+    /* background:Red; */
+    font-size:16px;
+  }
+
+  .section-b .social-networks .icons i {
+    font-size:24px;
   }
 
   .clients-card .img img{
@@ -1170,5 +1192,6 @@ footer form button {
 
   footer h2 {
     margin: 20px 0;
+    font-size:12px;
   }
 }
