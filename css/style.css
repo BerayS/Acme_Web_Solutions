@@ -604,10 +604,11 @@ header nav ul li a {
 
 .slider-wrapper{
   margin:0 auto;
+  /* background:blue; */
 }
 
 .slider-wrapper {
-  max-width:85%;
+  max-width:84%;
   /* background:red; */
   width:100%;
   position:relative;
@@ -642,12 +643,16 @@ header nav ul li a {
 .slider-wrapper .carousel {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
+  /* grid-auto-columns: calc((100% / 3) - 10px); */
+  grid-auto-columns: repeat(auto-fit,400px);
   gap:16px;
   overflow-x:auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width:0;
+  /* background:blue; */
+  /* justify-items:center; */
+  /* gap:20px; */
 }
 
 .carousel::-webkit-scrollbar {
@@ -663,8 +668,9 @@ header nav ul li a {
 .carousel .clients-card {
   scroll-snap-align:start;
   list-style:none;
+  width:400px;
   height:508px;
-  /* background:red; */
+  /* background:purple; */
   background-color: #fff;
   /* box-shadow:0 3px 10px rgba(0,0,0,0.2); */
   padding:20px;
@@ -903,7 +909,11 @@ footer form button {
 /* Mobile */
 @media screen and (max-width:600px) {
   .slider-wrapper .carousel {
-    grid-auto-columns: 100%;
+    grid-auto-columns: 400px;
+  }
+
+  .slider-wrapper .carousel .clients-card {
+    width:287px;
   }
 
   .landing .overlay header {
