@@ -85,3 +85,4 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter",() => clearTimeout(timeOutId));
 carousel.addEventListener("mouseleave", autoPlay);
+
